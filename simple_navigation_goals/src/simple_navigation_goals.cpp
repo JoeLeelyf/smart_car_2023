@@ -22,6 +22,8 @@ int main(int argc, char **argv)
     goal.target_pose.header.frame_id = "map";
     goal.target_pose.header.stamp = ros::Time::now();
 
+    // Set the goal's position, 
+    // which can be get through "rostopic echo /move_base_simple/goal" command
     goal.target_pose.pose.position.x = 4.03685092926;
     goal.target_pose.pose.position.y = -2.98988461494;
     goal.target_pose.pose.position.z = 0.0;
